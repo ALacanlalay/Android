@@ -1,4 +1,4 @@
-#Sun Sep 15 12:26:01 PHT 2019
+#Sun Sep 15 12:49:08 PHT 2019
 base.0=/home/monde/AndroidStudioProjects/CurrencyCoverter/Connect3/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
