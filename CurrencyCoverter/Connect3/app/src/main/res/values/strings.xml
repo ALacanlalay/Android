@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Connect 3</string>
+    <string name="todo">TODO</string>
+    <string name="you_win">You Win!</string>
+    <string name="play_again">Play Again</string>
+    <string name="wins">wins</string>
+</resources>

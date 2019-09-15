@@ -1,0 +1,4 @@
+#Fri Aug 30 15:40:03 PHT 2019
+base.0=/home/monde/AndroidStudioProjects/ToastDemo/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Number Shapes</string>
+
+    <string name="enter_a_number_and_i_will_identify_if_it_is_a_square_number">Enter a number and i will identify if it is a square number, triangle number, both, or not.</string>
+    <string name="enter_a_positive_number">Enter number...</string>
+    <string name="identify">identify</string>
+</resources>

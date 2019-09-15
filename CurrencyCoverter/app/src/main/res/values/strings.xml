@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Currency Coverter</string>
+    <string name="dollars_to_peso">Dollars to Peso</string>
+    <string name="enter_amount_in_dollars">Enter amount in dollars...</string>
+    <string name="todo">TODO</string>
+    <string name="convert">Convert</string>
+</resources>

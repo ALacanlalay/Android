@@ -1,0 +1,4 @@
+#Tue Sep 10 06:07:46 PHT 2019
+base.0=/home/monde/AndroidStudioProjects/CurrencyCoverter/NumberShapes/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

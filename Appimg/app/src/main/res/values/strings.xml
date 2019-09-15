@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App img</string>
+    <string name="todo">TODO</string>
+    <string name="click_me">Click me!</string>
+</resources>
