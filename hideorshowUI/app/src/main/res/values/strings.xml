@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">hide or show UI</string>
+    <string name="show">show</string>
+    <string name="hide">hide</string>
+</resources>

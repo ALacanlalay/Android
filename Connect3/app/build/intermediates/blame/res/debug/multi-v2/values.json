@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/monde/AndroidStudioProjects/Connect3/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/monde/AndroidStudioProjects/Android/Connect3/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/monde/.gradle/caches/transforms-2/files-2.1/04087833f388d5ffa97a080d757646c2/coordinatorlayout-1.0.0/res/values/values.xml",
@@ -20,42 +20,6 @@
                         "endLines": "15,1922,2685,2774",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "720,127833,175060,180271"
-                    }
-                },
-                {
-                    "source": "/home/monde/AndroidStudioProjects/Connect3/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "153,154,155",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "7704,7750,7797",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "7745,7792,7843"
-                    }
-                },
-                {
-                    "source": "/home/monde/AndroidStudioProjects/Connect3/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "368"
-                    },
-                    "to": {
-                        "startLines": "419",
-                        "startColumns": "4",
-                        "startOffsets": "24926",
-                        "endLines": "424",
-                        "endColumns": "12",
-                        "endOffsets": "25240"
                     }
                 },
                 {
@@ -116,6 +80,42 @@
                     }
                 },
                 {
+                    "source": "/home/monde/AndroidStudioProjects/Android/Connect3/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1,4,2,5,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "16,146,63,196,101",
+                        "endColumns": "46,49,37,37,44",
+                        "endOffsets": "58,191,96,229,141"
+                    },
+                    "to": {
+                        "startLines": "407,408,411,412,413",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "24142,24189,24363,24401,24439",
+                        "endColumns": "46,49,37,37,44",
+                        "endOffsets": "24184,24234,24396,24434,24479"
+                    }
+                },
+                {
+                    "source": "/home/monde/AndroidStudioProjects/Android/Connect3/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "368"
+                    },
+                    "to": {
+                        "startLines": "419",
+                        "startColumns": "4",
+                        "startOffsets": "24926",
+                        "endLines": "424",
+                        "endColumns": "12",
+                        "endOffsets": "25240"
+                    }
+                },
+                {
                     "source": "/home/monde/.gradle/caches/transforms-2/files-2.1/dd07e922b5233b833d82ee834e6becf7/appcompat-resources-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,29,36,47,74",
@@ -135,20 +135,20 @@
                     }
                 },
                 {
-                    "source": "/home/monde/AndroidStudioProjects/Connect3/app/src/main/res/values/strings.xml",
+                    "source": "/home/monde/AndroidStudioProjects/Android/Connect3/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "1,4,2,5,3",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "16,146,63,196,101",
-                        "endColumns": "46,49,37,37,44",
-                        "endOffsets": "58,191,96,229,141"
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
                     },
                     "to": {
-                        "startLines": "407,408,411,412,413",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "24142,24189,24363,24401,24439",
-                        "endColumns": "46,49,37,37,44",
-                        "endOffsets": "24184,24234,24396,24434,24479"
+                        "startLines": "153,154,155",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "7704,7750,7797",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "7745,7792,7843"
                     }
                 },
                 {
