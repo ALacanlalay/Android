@@ -70,25 +70,23 @@
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="381dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_width="356dp"
+        android:layout_height="293dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:background="#06F706"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewProblem">
 
         <Button
             android:id="@+id/choice1"
-            android:layout_width="103dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#06F706"
             android:onClick="choicesClicked"
             android:tag="0"
+            android:textSize="100sp"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_row="0"
@@ -101,6 +99,7 @@
             android:background="#0672F7"
             android:onClick="choicesClicked"
             android:tag="1"
+            android:textSize="100sp"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_row="0"
@@ -113,6 +112,7 @@
             android:background="#F70606"
             android:onClick="choicesClicked"
             android:tag="2"
+            android:textSize="100sp"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_row="1"
@@ -125,6 +125,7 @@
             android:background="#F1D207"
             android:onClick="choicesClicked"
             android:tag="3"
+            android:textSize="100sp"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_row="1"
@@ -142,7 +143,7 @@
         android:layout_marginRight="103dp"
         android:text="@string/textview"
         android:textColor="#161616"
-        android:textSize="20sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -163,5 +164,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewStatus" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
