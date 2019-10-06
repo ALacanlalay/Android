@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
 
+
             }
 
             @Override

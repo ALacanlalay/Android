@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity" >
+    android:background="@drawable/bgweather"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editText"
@@ -20,8 +20,8 @@
         android:ems="10"
         android:hint="@string/enter_a_city"
         android:inputType="textPersonName"
-        android:textColor="#F3F1F1"
-        android:textColorHint="#C7C71D"
+        android:textColor="#F1F1EE"
+        android:textColorHint="#F3F3F1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

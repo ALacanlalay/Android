@@ -2,12 +2,16 @@ package com.example.whatstheweather;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.JsonReader;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,6 +24,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
@@ -63,95 +68,91 @@ public class MainActivity extends AppCompatActivity {
                 return result;
 
 
-            } catch (MalformedURLException e) {
+            } catch (Exception e) {
 
-                e.printStackTrace();
+                Log.i("Error doInBackground", "Failed!");
 
-            } catch (IOException e) {
-
-
-                e.printStackTrace();
             }
 
-
-            return "failed";
+            return null;
         }
-/*
+
         @Override
         protected void onPostExecute(String result) {
 
+                try {
+
+                JSONObject jsonObject = new JSONObject(result);
+
+                String weatherInfo = jsonObject.getString("weather");
+
+                JSONArray arrWeatherInfo = new JSONArray(weatherInfo);
+
+                for(int i = 0; i < arrWeatherInfo.length(); i++) {
+
+                    JSONObject jsonPartWeatherInfo = arrWeatherInfo.getJSONObject(i);
 
 
+                    if(jsonPartWeatherInfo.getString("main").equals("") && jsonPartWeatherInfo.getString("description").equals(""))
+                    {
+                        Toast.makeText(getApplicationContext(), "Can't find weather!", Toast.LENGTH_LONG).show();
+
+                    } else {
+
+                        textView1.setText("Weather Condition: " + jsonPartWeatherInfo.getString("main") + "\n" + "Description: " + jsonPartWeatherInfo.getString("description"));
+                        //textView2.setText("Description: " + jsonPartWeatherInfo.getString("description"));
+
+                    }
+
+
+                }
+
+            } catch (Exception e) {
+
+                    Toast.makeText(getApplicationContext(), "Can't find weather!", Toast.LENGTH_LONG).show();
+                    Log.i("Error onPostExecute", "Failed!");
+
+                    textView1.setText("");
+                    textView2.setText("");
+
+            }
 
         }
 
- */
 
 
     }
 
     public void buttonClicked(View view) {
 
-        DownloadTask task = new DownloadTask();
-
-        editText = findViewById(R.id.editText);
-        userInput = editText.getText().toString();
-
-        if(userInput.equals("london") || userInput.equals("London")) {
-
-            Log.i("info", userInput);
-            String result = null;
-
-            try {
-
-                result = task.execute("https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22").get();
-                Log.i("Web Content", result);
+        InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        mgr.hideSoftInputFromWindow(editText.getWindowToken(),0);
 
 
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+                String result = "";
+
+                try {
+                   // String encodedUserInput = URLEncoder.encode(editText.getText().toString(), "UTF-8"); // Just in case spaces cannot be read by the app. use this.
+
+                    // put it in task.execute("https://api.openweathermap.org/data/2.5/weather?q=" + encodedUserInput + "&appid=72a39750eafd190cc37845297a7fac23").get(); <--- Just like this line
+
+                    userInput = editText.getText().toString();
+                    Log.i("info", userInput);
+
+                    DownloadTask task = new DownloadTask();
+
+                    result = task.execute("https://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&appid=72a39750eafd190cc37845297a7fac23").get();
+
+                    Log.i("Web Content", result);
 
 
-
-            try {
-
-                JSONObject jsonObject = new JSONObject(result);
-                String weatherInfo = jsonObject.getString("weather");
-
-                JSONArray arr = new JSONArray(weatherInfo);
-
-                for(int i = 0; i < arr.length(); i++) {
-
-                    JSONObject jsonPart = arr.getJSONObject(i);
-
-                    textView1.setText("Rain: " + jsonPart.getString("main"));
-                    textView2.setText("Description: " + jsonPart.getString("description"));
-
+                } catch (Exception e) {
+                    //Toast.makeText(getApplicationContext(), "Can't find weather!", Toast.LENGTH_LONG).show();
+                    Log.i("Error buttonClicked", "Failed!");
+                //    textView1.setText("");
+                 //   textView2.setText("");
 
                 }
-
-
-            } catch (JSONException e) {
-
-
-                e.printStackTrace();
-
-
-            }
-
-
-
-        } else {
-
-            Log.i("info", "failed!");
-            textView1.setText("");
-            textView2.setText("");
-
-        }
-
 
 
 
@@ -165,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
 
         textView1 = findViewById(R.id.textView1);
         textView2 = findViewById(R.id.textView2);
+        editText = findViewById(R.id.editText);
 
 
 
