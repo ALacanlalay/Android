@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Multiple Activities Demo</string>
+    <string name="jumptosecondactivity">jumpToSecondActivity</string>
+    <string name="jumptomainactivity">JumptoMainActivity</string>
+</resources>

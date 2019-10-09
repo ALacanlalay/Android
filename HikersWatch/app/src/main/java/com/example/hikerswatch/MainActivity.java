@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
+
 public class MainActivity extends AppCompatActivity {
 
     LocationManager locationManager;
@@ -53,29 +54,75 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("location info", location.toString());
 
-        TextView textViewlatitude = findViewById(R.id.textViewLatitude);
-        TextView textViewlLongitude = findViewById(R.id.textViewLongitude);
+        TextView textViewLatitude = findViewById(R.id.textViewLatitude);
+        TextView textViewLongitude = findViewById(R.id.textViewLongitude);
         TextView textViewAccuracy = findViewById(R.id.textViewAccuracy);
         TextView textViewaltitude = findViewById(R.id.textViewAltitude);
 
-        textViewaltitude.setText("Latitude: "+ location.getLatitude());
-        textViewaltitude.setText("Longitude: "+ location.getLongitude());
-        textViewaltitude.setText("Accuracy: "+ location.getAccuracy());
+        textViewLatitude.setText("Latitude: "+location.getLatitude());
+        textViewLongitude.setText("Longitude: "+ location.getLongitude());
+        textViewAccuracy.setText("Accuracy: "+ location.getAccuracy());
         textViewaltitude.setText("Altitude: "+ location.getAltitude());
 
         Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
 
         try {
 
+            String address = "Could not find address";
+
             List<Address> listAddress = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+
             if(listAddress != null && listAddress.size() > 0) {
 
                 Log.i("Place info", listAddress.get(0).toString());
 
+                address = "";
+
+                if(listAddress.get(0).getSubThoroughfare() != null) {
+
+                    address += listAddress.get(0).getSubThoroughfare() + "\n                ";
+
+                }
+
+                if(listAddress.get(0).getThoroughfare() != null) {
+
+                    address += listAddress.get(0).getThoroughfare() + "\n                ";
+
+                }
+
+                if(listAddress.get(0).getLocality() != null) {
+
+                    address += listAddress.get(0).getLocality() + "\n                ";
+
+                }
+
+                if(listAddress.get(0).getSubAdminArea() != null) {
+
+                    address += listAddress.get(0).getSubAdminArea() + "\n                ";
+
+                }
+
+                if(listAddress.get(0).getPostalCode() != null) {
+
+                    address += listAddress.get(0).getPostalCode() + "\n              ";
+
+                }
+
+                if(listAddress.get(0).getCountryName() != null) {
+
+                    address += listAddress.get(0).getCountryName() + "\n";
+
+                }
+
+
             }
 
+            TextView textViewAddress = findViewById(R.id.textViewAddress);
 
-        } catch (IOException e) {
+            textViewAddress.setText("Address: " + address);
+
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -130,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
                 locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER, 0, 0, locationListener);
 
                 Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
                 if(location != null) {
 
                     updateLocationInfo(location);

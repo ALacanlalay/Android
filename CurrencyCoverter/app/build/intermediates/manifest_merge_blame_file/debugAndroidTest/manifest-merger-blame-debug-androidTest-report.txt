@@ -3,31 +3,31 @@
 3    package="com.example.currencycoverter.test" >
 4
 5    <uses-sdk
-5-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:5:5-74
+5-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:5:5-74
 6        android:minSdkVersion="15"
-6-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:5:15-41
+6-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:5:42-71
+7-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:5:42-71
 8
 9    <instrumentation
-9-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:11:5-15:78
+9-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:11:5-15:78
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:11:22-76
+10-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:11:22-76
 11        android:functionalTest="false"
-11-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:14:22-52
+11-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:14:22-52
 12        android:handleProfiling="false"
-12-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:13:22-53
+12-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:13:22-53
 13        android:label="Tests for com.example.currencycoverter"
-13-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:15:22-76
+13-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:15:22-76
 14        android:targetPackage="com.example.currencycoverter" />
-14-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:12:22-74
+14-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:12:22-74
 15
 16    <application android:debuggable="true" >
-16-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:7:5-9:19
-16-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:7:18-43
+16-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:7:5-9:19
+16-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:7:18-43
 17        <uses-library android:name="android.test.runner" />
-17-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:8:9-60
-17-->/home/monde/AndroidStudioProjects/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger2828370486516686194.xml:8:23-57
+17-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:8:9-60
+17-->/home/monde/AndroidStudioProjects/Android/CurrencyCoverter/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5343032814149938740.xml:8:23-57
 18    </application>
 19
 20</manifest>

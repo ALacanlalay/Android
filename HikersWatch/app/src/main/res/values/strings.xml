@@ -4,6 +4,7 @@
     <string name="hiker_s_watch">Hiker\'s Watch</string>
     <string name="latitude">Latitude:</string>
     <string name="longitude">Longitude:</string>
-    <string name="accuracy">Accuracy</string>
-    <string name="altitude">Altitude</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="altitude">Altitude:</string>
+    <string name="address">Address:</string>
 </resources>
