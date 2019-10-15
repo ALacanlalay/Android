@@ -24,20 +24,79 @@ public class MainActivity extends AppCompatActivity {
 
     public void timeFormatTextView(int countDownTimer){
 
+       // int hours = (int) (TimeUnit.MILLISECONDS.toHours(countDownTimer * 1000));
+        int minutes = (int) (TimeUnit.MILLISECONDS.toMinutes(countDownTimer * 1000) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(countDownTimer * 1000)));
+        int seconds = (int) (TimeUnit.MILLISECONDS.toSeconds(countDownTimer * 1000) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(countDownTimer * 1000)));
+
+
+
+        //String hoursString = String.valueOf(TimeUnit.MILLISECONDS.toHours(countDownTimer * 1000));
+        String minutesString = String.valueOf(TimeUnit.MILLISECONDS.toMinutes(countDownTimer * 1000) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(countDownTimer * 1000)));
+        String secondsString = String.valueOf(TimeUnit.MILLISECONDS.toSeconds(countDownTimer * 1000) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(countDownTimer * 1000)));
+
+
+        if(seconds < 10) {
+
+            secondsString =  "0" + secondsString ;
+
+        }
+
+        if(minutes < 10) {
+
+            minutesString = "0" + minutesString;
+
+        }
+
+
+        textView.setText( minutesString + ":" + secondsString);
+/*
         textView.setText(""+String.format("%d:%d:%d",
-                TimeUnit.MILLISECONDS.toHours(countDownTimer * 1000),
-                TimeUnit.MILLISECONDS.toMinutes(countDownTimer * 1000) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(countDownTimer * 1000)),
-                TimeUnit.MILLISECONDS.toSeconds(countDownTimer * 1000) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(countDownTimer * 1000))));
+                hours,
+                minutes,
+                seconds));
+
+ */
+
+
+
+
 
     }
 
     public void countDownTimerTextView(long timer){
 
+       // int hours = (int) (TimeUnit.MILLISECONDS.toHours(timer ));
+        int minutes = (int) (TimeUnit.MILLISECONDS.toMinutes(timer ) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(timer )));
+        int seconds = (int) (TimeUnit.MILLISECONDS.toSeconds(timer) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timer )));
+
+
+
+       // String hoursString = String.valueOf(TimeUnit.MILLISECONDS.toHours(timer ));
+        String minutesString = String.valueOf(TimeUnit.MILLISECONDS.toMinutes(timer) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(timer )));
+        String secondsString = String.valueOf(TimeUnit.MILLISECONDS.toSeconds(timer ) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timer )));
+
+
+        if(seconds < 10) {
+
+            secondsString =  "0" + secondsString ;
+
+        }
+
+        if(minutes < 10) {
+
+            minutesString = "0" + minutesString;
+
+        }
+
+
+        textView.setText( minutesString + ":" + secondsString);
+/*
         textView.setText("" + String.format("%d:%d:%d",
                 TimeUnit.MILLISECONDS.toHours(timer),
                 TimeUnit.MILLISECONDS.toMinutes(timer),
                 TimeUnit.MILLISECONDS.toSeconds(timer) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timer))));
 
+ */
     }
 
 
@@ -53,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
         mediaPlayer = MediaPlayer.create(this, R.raw.airhorn);
 
-        timerDurationSeekBar.setMax(3600);
+        timerDurationSeekBar.setMax(600);
 
         timerDurationSeekBar.setProgress(0);
 
@@ -101,15 +160,18 @@ public class MainActivity extends AppCompatActivity {
             flag++;
 
 
-                 new CountDownTimer(seekbarTimer * 1000, 1000) {
+                 new CountDownTimer(seekbarTimer * 1000 + 100, 1000) {
 
                         public void onTick(long milliSecondsUntilDone) {
+
+                            Log.i("millisecondsUntilDone", String.valueOf(milliSecondsUntilDone));
 
                             if(flag == 1) {
 
                                 countDownTimerTextView(milliSecondsUntilDone);
 
                                 timerDurationSeekBar.animate().alpha(0);
+                                timerDurationSeekBar.setEnabled(false);
 
                                 go.setText("Stop!");
                             } else {
@@ -119,6 +181,7 @@ public class MainActivity extends AppCompatActivity {
                                 timeFormatTextView(0);
                                 flag = 0;
                                 timerDurationSeekBar.animate().alpha(1);
+                                timerDurationSeekBar.setEnabled(true);
                                 timerDurationSeekBar.setProgress(0);
 
                             }
