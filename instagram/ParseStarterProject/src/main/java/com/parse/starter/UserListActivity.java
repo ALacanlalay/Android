@@ -153,17 +153,29 @@ public class UserListActivity extends AppCompatActivity {
 
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+
+                Log.i("Photo", "Successfully compressed");
 
                 byte[] byteArray = stream.toByteArray();
 
-                ParseFile file = new ParseFile("Image.png", byteArray);
+                Log.i("Photo", "Photo Converting to byteArray");
+
+                ParseFile file = new ParseFile("Image.jpg", byteArray);
+
+                Log.i("Photo", "initialized parse file");
 
                 ParseObject object = new ParseObject("Image");
 
+                Log.i("Photo", "initialized parse object");
+
                 object.put("image", file);
 
+                Log.i("Photo", "photo sent to parse server");
+
                 object.put("username", ParseUser.getCurrentUser().getUsername());
+
+                Log.i("Photo", "username sent accordingly with his/her uploaded photo");
 
                 object.saveInBackground(new SaveCallback() {
                     @Override
@@ -173,19 +185,27 @@ public class UserListActivity extends AppCompatActivity {
 
                             Toast.makeText(UserListActivity.this, "Image shared!", Toast.LENGTH_SHORT).show();
 
+                            Log.i("Done", "Image Shared");
+
                         } else {
 
                             Toast.makeText(UserListActivity.this, "Image could not be shared! - Please try again later!", Toast.LENGTH_SHORT).show();
 
+                            Log.i("Done", "Image not Shared");
+
 
                         }
 
+                        Log.i("Photo", "successfully shared!");
 
                     }
                 });
 
+
+
             } catch (Exception e) {
                 e.printStackTrace();
+                Toast.makeText(getApplicationContext(), "Image could not be shared!- please try again later!", Toast.LENGTH_SHORT).show();
 
             }
 
