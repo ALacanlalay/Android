@@ -10,14 +10,18 @@ package com.parse.starter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.parse.FindCallback;
 import com.parse.GetCallback;
@@ -35,83 +39,19 @@ import com.parse.SignUpCallback;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
 
   Boolean signUpModeActive = true;
 
   TextView textViewChangeSignUpMode;
 
-  public void signUp(View view) {
+  EditText editTextPassword;
 
-    EditText editTextUsername = findViewById(R.id.editTextUsername);
-    EditText editTextPassword = findViewById(R.id.editTextPassword);
+  public void showUserList() {
 
-    if(editTextUsername.getText().toString().matches("") || editTextPassword.getText().toString().matches("")) {
+    Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
+    startActivity(intent);
 
-      Toast.makeText(getApplicationContext(), "Username and Password is required", Toast.LENGTH_SHORT).show();
-
-    } else {
-
-      if(signUpModeActive) {
-
-        ParseUser user = new ParseUser();
-
-        user.setUsername(editTextUsername.getText().toString());
-        user.setPassword(editTextPassword.getText().toString());
-
-        user.signUpInBackground(new SignUpCallback() {
-          @Override
-          public void done(ParseException e) {
-
-            if (e == null) {
-
-              Log.i("Signup", "Successful");
-
-            } else {
-
-              Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-
-            }
-
-          }
-        });
-      } else {
-
-        ParseUser.logInInBackground(editTextUsername.getText().toString(), editTextPassword.getText().toString(), new LogInCallback() {
-          @Override
-          public void done(ParseUser user, ParseException e) {
-
-            if(user != null) {
-
-              Log.i("Signup", "Login successful");
-
-            } else {
-
-              Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-
-            }
-
-          }
-        });
-
-      }
-
-    }
-
-  }
-
-
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
-
-    textViewChangeSignUpMode = findViewById(R.id.textViewChangeSignUpMode);
-
-    textViewChangeSignUpMode.setOnClickListener(this);
-
-    
-    ParseAnalytics.trackAppOpenedInBackground(getIntent());
   }
 
   @Override
@@ -135,7 +75,127 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
       }
 
+    } else if (v.getId() == R.id.backgroundLayout || v.getId() == R.id.imageView) {
+
+
+      InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+      inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+
+
+
     }
 
   }
+
+  @Override
+  public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+    if(keyCode == event.KEYCODE_ENTER && event.getAction() == KeyEvent.ACTION_DOWN) {
+
+      signUp(v);
+
+    }
+
+    return false;
+  }
+
+
+
+  public void signUp(View view) {
+
+    EditText editTextUsername = findViewById(R.id.editTextUsername);
+
+
+    if(editTextUsername.getText().toString().matches("") || editTextPassword.getText().toString().matches("")) {
+
+      Toast.makeText(getApplicationContext(), "Username and Password is required", Toast.LENGTH_SHORT).show();
+
+    } else {
+
+      if(signUpModeActive) {
+
+        ParseUser user = new ParseUser();
+
+        user.setUsername(editTextUsername.getText().toString());
+        user.setPassword(editTextPassword.getText().toString());
+
+        user.signUpInBackground(new SignUpCallback() {
+          @Override
+          public void done(ParseException e) {
+
+            if (e == null) {
+
+              Log.i("Signup", "Successful");
+
+              showUserList();
+
+            } else {
+
+              Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+
+            }
+
+          }
+        });
+      } else {
+
+        ParseUser.logInInBackground(editTextUsername.getText().toString(), editTextPassword.getText().toString(), new LogInCallback() {
+          @Override
+          public void done(ParseUser user, ParseException e) {
+
+            if(user != null) {
+
+              Log.i("Signup", "Login successful");
+
+              showUserList();
+
+            } else {
+
+              Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+
+            }
+
+          }
+        });
+
+      }
+
+    }
+
+  }
+
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    setTitle("Instagram");
+
+    textViewChangeSignUpMode = findViewById(R.id.textViewChangeSignUpMode);
+
+    textViewChangeSignUpMode.setOnClickListener(this);
+
+    ConstraintLayout backgroundLayout = findViewById(R.id.backgroundLayout);
+
+    ImageView imageView = findViewById(R.id.imageView);
+
+    backgroundLayout.setOnClickListener(this);
+
+    imageView.setOnClickListener(this);
+
+    editTextPassword = findViewById(R.id.editTextPassword);
+
+    editTextPassword.setOnKeyListener(this);
+
+    if(ParseUser.getCurrentUser() != null) {
+
+      showUserList();
+
+    }
+
+    
+    ParseAnalytics.trackAppOpenedInBackground(getIntent());
+  }
+
 }

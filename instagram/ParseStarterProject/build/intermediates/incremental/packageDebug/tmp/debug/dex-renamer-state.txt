@@ -1,4 +1,4 @@
-#Tue Oct 29 16:57:03 PHT 2019
+#Wed Oct 30 14:48:36 PHT 2019
 base.0=/home/monde/AndroidStudioProjects/instagram/ParseStarterProject/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
