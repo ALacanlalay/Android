@@ -6,61 +6,62 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml
+8-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml
+9-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:5:5-67
-11-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:5:22-64
+11-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:5:5-67
+11-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:6:5-79
-12-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:6:22-76
+12-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:6:5-79
+12-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:7:5-80
-13-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:7:22-77
+13-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:7:5-80
+13-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:7:22-77
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:8:5-79
-14-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:8:22-76
+14-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:8:5-79
+14-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:8:22-76
 15
 16    <application
-16-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:10:5-28:19
+16-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:5-28:19
 17        android:name="com.parse.starter.StarterApplication"
-17-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:11:9-43
+17-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:11:9-43
 18        android:allowBackup="true"
-18-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:12:9-35
+18-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:12:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.1.0] C:\Users\monde\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+19-->[androidx.core:core:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
-21-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:13:9-43
+21-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:13:9-43
 22        android:label="@string/app_name"
-22-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:14:9-41
-23        android:theme="@style/AppTheme" >
-23-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:15:9-40
-24        <activity android:name="com.parse.starter.UserFeedActivity" />
-24-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:17:9-63
-24-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:17:19-51
-25        <activity android:name="com.parse.starter.UserListActivity" />
-25-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:18:9-54
-25-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:18:19-51
-26        <activity
-26-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:19:9-27:20
-27            android:name="com.parse.starter.MainActivity"
-27-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:20:13-41
-28            android:label="@string/app_name" >
-28-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:21:13-45
-29            <intent-filter>
-29-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:22:13-26:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:23:17-69
-30-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:23:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:25:17-77
-32-->E:\androidStudioProjects\Android\instagram\ParseStarterProject\src\main\AndroidManifest.xml:25:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+22-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:14:9-41
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:15:9-40
+25        <activity android:name="com.parse.starter.UserFeedActivity" />
+25-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:17:9-63
+25-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:17:19-51
+26        <activity android:name="com.parse.starter.UserListActivity" />
+26-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:18:9-54
+26-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:18:19-51
+27        <activity
+27-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:19:9-27:20
+28            android:name="com.parse.starter.MainActivity"
+28-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:20:13-41
+29            android:label="@string/app_name" >
+29-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:21:13-45
+30            <intent-filter>
+30-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:22:13-26:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:23:17-69
+31-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:23:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:25:17-77
+33-->/home/monde/AndroidStudioProjects/Android/instagram/ParseStarterProject/src/main/AndroidManifest.xml:25:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

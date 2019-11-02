@@ -3,31 +3,31 @@
 3    package="com.example.numbershapes.test" >
 4
 5    <uses-sdk
-5-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:5:5-74
+5-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:5:5-74
 6        android:minSdkVersion="15"
-6-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:5:15-41
+6-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:5:42-71
+7-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:5:42-71
 8
 9    <instrumentation
-9-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:11:5-15:74
+9-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:11:5-15:74
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:11:22-76
+10-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:11:22-76
 11        android:functionalTest="false"
-11-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:14:22-52
+11-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:14:22-52
 12        android:handleProfiling="false"
-12-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:13:22-53
+12-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:13:22-53
 13        android:label="Tests for com.example.numbershapes"
-13-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:15:22-72
+13-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:15:22-72
 14        android:targetPackage="com.example.numbershapes" />
-14-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:12:22-70
+14-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:12:22-70
 15
 16    <application android:debuggable="true" >
-16-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:7:5-9:19
-16-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:7:18-43
+16-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:7:5-9:19
+16-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:7:18-43
 17        <uses-library android:name="android.test.runner" />
-17-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:8:9-60
-17-->/home/monde/AndroidStudioProjects/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger3135715893624641812.xml:8:23-57
+17-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:8:9-60
+17-->/home/monde/AndroidStudioProjects/Android/NumberShapes/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger9202221270164282196.xml:8:23-57
 18    </application>
 19
 20</manifest>

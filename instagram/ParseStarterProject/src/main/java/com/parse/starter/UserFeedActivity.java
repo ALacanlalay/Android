@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 
 
 import android.graphics.Matrix;
+import android.media.ExifInterface;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -22,29 +23,13 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import java.io.ByteArrayInputStream;
 import java.util.List;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class UserFeedActivity extends AppCompatActivity {
-
-    private static int fixOrientation(Bitmap bitmap) {
-        if (bitmap.getWidth() > bitmap.getHeight()) {
-            return 90;
-        }
-        return 0;
-    }
-
-
-    public static Bitmap flipIMage(Bitmap bitmap) {
-        //Moustafa: fix issue of image reflection due to front camera settings
-        Matrix matrix = new Matrix();
-        int rotation = fixOrientation(bitmap);
-        matrix.postRotate(rotation);
-        matrix.preScale(-1, 1);
-        return Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,10 +86,6 @@ public class UserFeedActivity extends AppCompatActivity {
 
                                         Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
 
-                                        fixOrientation(bitmap);
-
-                                        flipIMage(bitmap);
-
                                         int x = bitmap.getWidth();
                                         int y = bitmap.getHeight();
 
@@ -117,18 +98,32 @@ public class UserFeedActivity extends AppCompatActivity {
 
                                         }
 
-                                        ImageView imageView = new ImageView(getApplicationContext());
+                                        //flipIMage(bitmap, x, y);
 
+
+                                        ImageView imageView = new ImageView(getApplicationContext());
+/*
                                         imageView.setLayoutParams(new ViewGroup.LayoutParams(
                                                 MATCH_PARENT,
                                                 WRAP_CONTENT
                                         ));
 
-                                        //imageView.setImageBitmap(bitmap);
+
+ */
+
+                                        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT);
+                                        imageView.setLayoutParams(layoutParams);
+
 
                                         imageView.setImageBitmap(Bitmap.createScaledBitmap(bitmap, x, y, false));
 
+                                        //imageView.setImageBitmap(bitmap);
+
+                                        //imageView.setImageBitmap(flipIMage(bitmap, x, y));
+
                                         linearLayout.setVerticalScrollBarEnabled(true);
+
+
 
                                         linearLayout.addView(imageView);
 

@@ -768,6 +768,8 @@ id forever
 id gone
 id group_divider
 id groups
+id guideline
+id guideline2
 id home
 id homeAsUp
 id icon
