@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="27"
+        android:minSdkVersion="23"
         android:targetSdkVersion="29" />
 
     <!--
@@ -45,6 +45,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity
+            android:name="com.parse.starter.DriverLocationActivity"
+            android:label="@string/title_activity_driver_location" />
+        <activity android:name="com.parse.starter.ViewRequestsActivity" />
         <activity
             android:name="com.parse.starter.RiderActivity"
             android:label="@string/title_activity_rider" />

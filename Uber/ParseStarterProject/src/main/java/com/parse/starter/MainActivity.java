@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
       startActivity(intent);
 
+    } else {
+
+      Intent intent = new Intent(getApplicationContext(), ViewRequestsActivity.class);
+
+      startActivity(intent);
+
     }
 
     Log.i("User", String.valueOf(ParseUser.getCurrentUser().get("riderOrDriver")));

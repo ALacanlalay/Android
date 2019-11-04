@@ -21,4 +21,5 @@
     <string name="driver">Driver</string>
     <string name="todo">TODO</string>
     <string name="call_an_uber">Call an Uber</string>
+    <string name="logout">Logout</string>
 </resources>
