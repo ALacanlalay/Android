@@ -32,11 +32,16 @@ public class MainActivity extends AppCompatActivity {
 
     if(ParseUser.getCurrentUser().get("riderOrDriver").equals("rider")) {
 
+      Log.i("User", String.valueOf(ParseUser.getCurrentUser().get("riderOrDriver")) + " Sign in as rider");
+
       Intent intent = new Intent(getApplicationContext(),RiderActivity.class);
 
       startActivity(intent);
 
     } else {
+
+      Log.i("User", String.valueOf(ParseUser.getCurrentUser().get("riderOrDriver")) + " Sign in as driver");
+
 
       Intent intent = new Intent(getApplicationContext(), ViewRequestsActivity.class);
 
@@ -44,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    Log.i("User", String.valueOf(ParseUser.getCurrentUser().get("riderOrDriver")));
+
 
   }
 
@@ -77,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
       }
     });
 
-    Log.i("info", "Redirecting as " + userType);
+    //Log.i("info", "Redirecting as " + userType);
 
     //redirectActivity();
 
@@ -120,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
         redirectActivity();
 
       }
+
       Log.i("Info", "You're already logged in!");
 
     }

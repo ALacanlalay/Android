@@ -2,6 +2,7 @@ package com.parse.starter;
 
 
 import android.Manifest;
+import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,6 +12,9 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,10 +26,12 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.parse.FindCallback;
+import com.parse.LogOutCallback;
 import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -92,21 +98,17 @@ public class ViewRequestsActivity extends AppCompatActivity {
 
                                     usernames.add(object.getString("username"));
 
-                                    arrayAdapter.notifyDataSetChanged();
+
                                 }
-
-
                             }
 
                         } else {
 
                             requests.add("No active requests nearby");
-                            arrayAdapter.notifyDataSetChanged();
-
 
                         }
 
-
+                        arrayAdapter.notifyDataSetChanged();
 
                     }
 
@@ -163,9 +165,7 @@ public class ViewRequestsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                if (Build.VERSION.SDK_INT < 23 ||
-                        ContextCompat.checkSelfPermission(ViewRequestsActivity.this,android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
-                                ContextCompat.checkSelfPermission(ViewRequestsActivity.this,android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                if (Build.VERSION.SDK_INT < 23 || ContextCompat.checkSelfPermission(ViewRequestsActivity.this,android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 
 
                     Location lastKnownLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
@@ -209,6 +209,10 @@ public class ViewRequestsActivity extends AppCompatActivity {
             public void onLocationChanged(Location location) {
 
                 updateListView(location);
+
+                ParseUser.getCurrentUser().put("location", new ParseGeoPoint(location.getLatitude(), location.getLongitude()));
+
+                ParseUser.getCurrentUser().saveInBackground();
 
             }
 

@@ -134,7 +134,7 @@ public class DriverLocationActivity extends FragmentActivity implements OnMapRea
                     }
                     LatLngBounds bounds = builder.build();
 
-                    int padding = 30; // offset from edges of the map in pixels
+                    int padding = 60; // offset from edges of the map in pixels
                     CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
 
                     mMap.animateCamera(cu);

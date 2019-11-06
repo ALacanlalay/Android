@@ -844,6 +844,7 @@ id ifRoom
 id image
 id imageView
 id info
+id infoTextView
 id invisible
 id italic
 id left

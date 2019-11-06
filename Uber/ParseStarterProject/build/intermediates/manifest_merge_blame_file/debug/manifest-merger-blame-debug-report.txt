@@ -32,11 +32,11 @@
 20-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:22-78
 21
 22    <uses-feature
-22-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/1b9026f860ab6935418a182675a0a44a/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+22-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
 23        android:glEsVersion="0x00020000"
-23-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/1b9026f860ab6935418a182675a0a44a/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+23-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
 24        android:required="true" />
-24-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/1b9026f860ab6935418a182675a0a44a/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+24-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 25
 26    <application
 26-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:16:5-51:19
@@ -45,7 +45,7 @@
 28        android:allowBackup="true"
 28-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
 31-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
@@ -104,27 +104,27 @@
 63        </activity>
 64        <!-- Needs to be explicitly declared on P+ -->
 65        <uses-library
-65-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/1b9026f860ab6935418a182675a0a44a/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+65-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
 66            android:name="org.apache.http.legacy"
-66-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/1b9026f860ab6935418a182675a0a44a/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+66-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
 67            android:required="false" />
-67-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/1b9026f860ab6935418a182675a0a44a/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+67-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
 68
 69        <activity
-69-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/e91790921c910b5c0de2045e813ad59c/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+69-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
 70            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-70-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/e91790921c910b5c0de2045e813ad59c/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+70-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
 71            android:exported="false"
-71-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/e91790921c910b5c0de2045e813ad59c/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+71-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
 72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-72-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/e91790921c910b5c0de2045e813ad59c/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+72-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
 73
 74        <meta-data
-74-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/8332131f6675301b4c0f7ae3fe17e1e6/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+74-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 75            android:name="com.google.android.gms.version"
-75-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/8332131f6675301b4c0f7ae3fe17e1e6/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+75-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 76            android:value="@integer/google_play_services_version" />
-76-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/8332131f6675301b4c0f7ae3fe17e1e6/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+76-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 77    </application>
 78
 79</manifest>
