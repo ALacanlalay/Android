@@ -59,9 +59,13 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
     Handler handler = new Handler();
 
+    Runnable runnable;
+
     TextView infoTextView;
 
     public void checkForUpdates() {
+
+        Log.i("Method", "Check for updates");
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Request");
 
@@ -122,7 +126,17 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
                                                 }
                                             });
 
+                                            infoTextView.setText("");
 
+                                            callUberButton.setVisibility(View.VISIBLE);
+
+                                            callUberButton.setText("Call an Uber");
+
+                                            requestActive = false;
+
+                                            driverActive = false;
+
+/*
                                             handler.postDelayed(new Runnable() {
                                                 @Override
                                                 public void run() {
@@ -136,11 +150,10 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
                                                     requestActive = false;
 
                                                     driverActive = false;
-
                                                 }
-                                            }, 5000);
+                                            }, 2000);
 
-
+ */
 
 
                                         } else {
@@ -179,15 +192,22 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
                                             callUberButton.setVisibility(View.INVISIBLE);
 
+
+/*
                                             handler.postDelayed(new Runnable() {
                                                 @Override
                                                 public void run() {
 
+                                                    Log.i("Runnable Info updates", "Checking for updates");
+
                                                     checkForUpdates();
 
-
                                                 }
-                                            }, 2000);
+                                            }, 1000);
+
+ */
+
+
 
                                         }
 
@@ -207,9 +227,13 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
                 }
 
 
-
             }
         });
+
+        Log.i("checkForUpdates", "End of check for updates");
+
+
+
 
     }
 
@@ -228,6 +252,8 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
         Log.i("Info", "Call Uber");
 
+        Log.i("Ra", requestActive.toString());
+
         if(requestActive) {
 
             ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Request");
@@ -241,6 +267,8 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
                     if(e == null) {
 
                         if(objects.size() > 0) {
+
+                            Log.i("call uber", "request is active");
 
                             for(ParseObject object : objects) {
 
@@ -289,7 +317,9 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
                                 requestActive = true;
 
-                                checkForUpdates();
+                                Log.i("callUber", "Check for updates");
+
+                                //checkForUpdates();
 
 
                             }
@@ -336,6 +366,10 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
     public void updateMap(Location location) {
 
+        //this updateMap method is for the rider's or user's location marker on the google map
+
+        //if there aren't any drivers who accepted the user's request then put the marker of user's location on the map
+
         if(driverActive == false) {
 
             LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
@@ -350,18 +384,7 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rider);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-
-        callUberButton = findViewById(R.id.callUberButton);
-
-        infoTextView = findViewById(R.id.infoTextView);
+    public void checkRequest(){
 
         ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Request");
 
@@ -379,7 +402,21 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
 
                         callUberButton.setText("Cancel Uber");
 
-                        checkForUpdates();
+                        Log.i("Oncreate", "CheckForUpdates");
+
+                        runnable = new Runnable() {
+                            @Override
+                            public void run() {
+
+                                checkForUpdates();
+
+                                handler.postDelayed(runnable, 5000);
+
+                            }
+                        };
+                        handler.post(runnable);
+
+
 
                     }
 
@@ -388,7 +425,47 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
             }
         });
 
+
+
     }
+
+    //handler.postDelayed(new Runnable) methos isn't working here.. you have to declare a runnable variable and a handler variable for threading
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rider);
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+        callUberButton = findViewById(R.id.callUberButton);
+
+        infoTextView = findViewById(R.id.infoTextView);
+
+        checkRequest();
+
+        //m_Runnable.run();
+
+    }
+
+    /*
+
+    private final Runnable m_Runnable = new Runnable()
+    {
+        public void run()
+
+        {
+
+            Log.i("Runnable", "this happened");
+            checkForUpdates();
+
+           RiderActivity.this.handler.postDelayed(m_Runnable,5000);
+        }
+
+    };
+    */
 
 
     /**
