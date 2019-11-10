@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/monde/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
@@ -31,53 +31,53 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/monde/.gradle/cache
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/df65787e67fe4b4bc0635deed9695797/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/a1f5477cd6fd5fad9baa3e263bec7d60/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/60b50828def4ba3859898ffb4c971c21/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
 	package
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:3:5-32
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:3:5-32
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:1-53:12
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:5-79
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:22-76
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:5-67
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.github.parse-community.Parse-SDK-Android:parse:1.21.0] /home/monde/.gradle/caches/transforms-2/files-2.1/0f4612d10d273f92e392d46997bbb7f4/parse-1.21.0/AndroidManifest.xml:19:5-67
 MERGED from [com.github.parse-community.Parse-SDK-Android:parse:1.21.0] /home/monde/.gradle/caches/transforms-2/files-2.1/0f4612d10d273f92e392d46997bbb7f4/parse-1.21.0/AndroidManifest.xml:19:5-67
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:5-79
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.github.parse-community.Parse-SDK-Android:parse:1.21.0] /home/monde/.gradle/caches/transforms-2/files-2.1/0f4612d10d273f92e392d46997bbb7f4/parse-1.21.0/AndroidManifest.xml:20:5-79
 MERGED from [com.github.parse-community.Parse-SDK-Android:parse:1.21.0] /home/monde/.gradle/caches/transforms-2/files-2.1/0f4612d10d273f92e392d46997bbb7f4/parse-1.21.0/AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:22-76
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:5-80
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:22-77
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:22-77
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:5-81
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:22-78
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:22-78
 application
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:16:5-51:19
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:16:5-51:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/monde/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/monde/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
@@ -99,57 +99,57 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/monde
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:20:9-41
 	android:icon
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:21:9-40
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:21:9-40
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:17:9-43
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:17:9-43
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:31:9-33:55
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:31:9-33:55
 	android:value
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:33:13-52
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:32:13-58
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:32:13-58
 activity#com.parse.starter.DriverLocationActivity
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:35:9-37:79
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:35:9-37:79
 	android:label
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:37:13-67
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:37:13-67
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:36:13-51
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:36:13-51
 activity#com.parse.starter.ViewRequestsActivity
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:9-58
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:9-58
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:19-55
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:19-55
 activity#com.parse.starter.RiderActivity
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:39:9-41:60
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:39:9-41:60
 	android:label
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:41:13-57
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:41:13-57
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:40:13-42
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:40:13-42
 activity#com.parse.starter.MainActivity
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:42:9-50:20
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:42:9-50:20
 	android:label
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:44:13-45
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:44:13-45
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:43:13-41
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:43:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:45:13-49:29
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:17-69
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:25-66
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:17-77
+ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:27-74
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:27-74
 uses-sdk
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/monde/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
@@ -204,16 +204,16 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/monde/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/a1f5477cd6fd5fad9baa3e263bec7d60/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/60b50828def4ba3859898ffb4c971c21/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/60b50828def4ba3859898ffb4c971c21/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-		ADDED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
-		INJECTED from /home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion

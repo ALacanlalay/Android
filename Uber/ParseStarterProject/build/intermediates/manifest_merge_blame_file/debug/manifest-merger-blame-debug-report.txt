@@ -6,9 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+8-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml
+9-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml
 10
 11    <!--
 12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -16,20 +16,20 @@
 14         location permissions for the 'MyLocation' functionality.
 15    -->
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:5-79
-16-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:22-76
+16-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:5-79
+16-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:10:22-76
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:5-67
-17-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:22-64
+17-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:5-67
+17-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:11:22-64
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:5-79
-18-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:22-76
+18-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:5-79
+18-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:12:22-76
 19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-19-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:5-80
-19-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:22-77
+19-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:5-80
+19-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:13:22-77
 20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-20-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:5-81
-20-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:22-78
+20-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:5-81
+20-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:14:22-78
 21
 22    <uses-feature
 22-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
@@ -39,92 +39,91 @@
 24-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 25
 26    <application
-26-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:16:5-51:19
+26-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:16:5-51:19
 27        android:name="com.parse.starter.StarterApplication"
-27-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:17:9-43
+27-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:17:9-43
 28        android:allowBackup="true"
-28-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
+28-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
+31-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
 32        android:label="@string/app_name"
-32-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:20:9-41
-33        android:testOnly="true"
-34        android:theme="@style/AppTheme" >
-34-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:21:9-40
-35
-36        <!--
-37             The API key for Google Maps-based APIs is defined as a string resource.
-38             (See the file "res/values/google_maps_api.xml").
-39             Note that the API key is linked to the encryption key used to sign the APK.
-40             You need a different API key for each encryption key, including the release key that is used to
-41             sign the APK for publishing.
-42             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-43        -->
-44        <meta-data
-44-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:31:9-33:55
-45            android:name="com.google.android.geo.API_KEY"
-45-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:32:13-58
-46            android:value="@string/google_maps_key" />
-46-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:33:13-52
-47
-48        <activity
-48-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:35:9-37:79
-49            android:name="com.parse.starter.DriverLocationActivity"
-49-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:36:13-51
-50            android:label="@string/title_activity_driver_location" />
-50-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:37:13-67
-51        <activity android:name="com.parse.starter.ViewRequestsActivity" />
-51-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:9-58
-51-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:19-55
-52        <activity
-52-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:39:9-41:60
-53            android:name="com.parse.starter.RiderActivity"
-53-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:40:13-42
-54            android:label="@string/title_activity_rider" />
-54-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:41:13-57
-55        <activity
-55-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:42:9-50:20
-56            android:name="com.parse.starter.MainActivity"
-56-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:43:13-41
-57            android:label="@string/app_name" >
-57-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:44:13-45
-58            <intent-filter>
-58-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:45:13-49:29
-59                <action android:name="android.intent.action.MAIN" />
-59-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:17-69
-59-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:25-66
-60
-61                <category android:name="android.intent.category.LAUNCHER" />
-61-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:17-77
-61-->/home/monde/AndroidStudioProjects/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:27-74
-62            </intent-filter>
-63        </activity>
-64        <!-- Needs to be explicitly declared on P+ -->
-65        <uses-library
-65-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
-66            android:name="org.apache.http.legacy"
-66-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
-67            android:required="false" />
-67-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
-68
-69        <activity
-69-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-70            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-70-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-71            android:exported="false"
-71-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-72-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-73
-74        <meta-data
-74-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-75            android:name="com.google.android.gms.version"
-75-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-76            android:value="@integer/google_play_services_version" />
-76-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-77    </application>
-78
-79</manifest>
+32-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:20:9-41
+33        android:theme="@style/AppTheme" >
+33-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:21:9-40
+34
+35        <!--
+36             The API key for Google Maps-based APIs is defined as a string resource.
+37             (See the file "res/values/google_maps_api.xml").
+38             Note that the API key is linked to the encryption key used to sign the APK.
+39             You need a different API key for each encryption key, including the release key that is used to
+40             sign the APK for publishing.
+41             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+42        -->
+43        <meta-data
+43-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:31:9-33:55
+44            android:name="com.google.android.geo.API_KEY"
+44-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:32:13-58
+45            android:value="@string/google_maps_key" />
+45-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:33:13-52
+46
+47        <activity
+47-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:35:9-37:79
+48            android:name="com.parse.starter.DriverLocationActivity"
+48-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:36:13-51
+49            android:label="@string/title_activity_driver_location" />
+49-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:37:13-67
+50        <activity android:name="com.parse.starter.ViewRequestsActivity" />
+50-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:9-58
+50-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:38:19-55
+51        <activity
+51-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:39:9-41:60
+52            android:name="com.parse.starter.RiderActivity"
+52-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:40:13-42
+53            android:label="@string/title_activity_rider" />
+53-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:41:13-57
+54        <activity
+54-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:42:9-50:20
+55            android:name="com.parse.starter.MainActivity"
+55-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:43:13-41
+56            android:label="@string/app_name" >
+56-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:44:13-45
+57            <intent-filter>
+57-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:45:13-49:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:17-69
+58-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:46:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:17-77
+60-->/home/monde/AndroidStudioProjects/Android/Uber/ParseStarterProject/src/main/AndroidManifest.xml:48:27-74
+61            </intent-filter>
+62        </activity>
+63        <!-- Needs to be explicitly declared on P+ -->
+64        <uses-library
+64-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+65            android:name="org.apache.http.legacy"
+65-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+66            android:required="false" />
+66-->[com.google.android.gms:play-services-maps:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/4882c64b33418d4d6e2bb0cb7ae334e3/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+67
+68        <activity
+68-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+69            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+69-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+70            android:exported="false"
+70-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->[com.google.android.gms:play-services-base:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+72
+73        <meta-data
+73-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+74            android:name="com.google.android.gms.version"
+74-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+75            android:value="@integer/google_play_services_version" />
+75-->[com.google.android.gms:play-services-basement:17.0.0] /home/monde/.gradle/caches/transforms-2/files-2.1/41c18cd7600ecdb7b8f5998d4f91eabe/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+76    </application>
+77
+78</manifest>
