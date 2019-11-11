@@ -52,7 +52,6 @@ public class FlappyBird extends ApplicationAdapter{
 	@Override
 	public void create () {
 
-		SharedPreferences
 		batch = new SpriteBatch();
 		background = new Texture("bg.png");
 
