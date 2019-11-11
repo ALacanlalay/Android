@@ -2,6 +2,7 @@ package com.alacanlalay.game;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -10,14 +11,13 @@ import com.badlogic.gdx.math.Circle;
 import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Rectangle;
 
-import java.sql.SQLInput;
 import java.util.Random;
-
-import javax.management.StringValueExp;
 
 public class FlappyBird extends ApplicationAdapter{
 	SpriteBatch batch;
 	Texture background;
+
+	private static Preferences prefs;
 
 	//ShapeRenderer shapeRenderer;
 
@@ -31,7 +31,8 @@ public class FlappyBird extends ApplicationAdapter{
 	int score = 0;
 	int scoringTube = 0;
 
-	BitmapFont font;
+	BitmapFont fontCurrentScore;
+	BitmapFont fontHighestScore;
 
 	int gameState = 0;
 	float gravity = 2;
@@ -59,9 +60,13 @@ public class FlappyBird extends ApplicationAdapter{
 
 		//shapeRenderer = new ShapeRenderer();
 		birdCircle = new Circle();
-		font = new BitmapFont();
-		font.setColor(Color.WHITE);
-		font.getData().setScale(10);
+		fontCurrentScore = new BitmapFont();
+		fontCurrentScore.setColor(Color.WHITE);
+		fontCurrentScore.getData().setScale(10);
+
+		fontHighestScore = new BitmapFont();
+		fontHighestScore.setColor(Color.WHITE);
+		fontHighestScore.getData().setScale(10);
 
 		birds = new Texture[2];
 		birds[0] = new Texture("bird.png");
@@ -82,6 +87,31 @@ public class FlappyBird extends ApplicationAdapter{
 
 
 		birdY = Gdx.graphics.getHeight() / 2 - birds[0].getHeight() / 2;
+
+		prefs = Gdx.app.getPreferences("FlappyBird");
+
+		if (!prefs.contains("highScore")) {
+
+			prefs.putInteger("highScore", score);
+
+		} else {
+
+			if(score >= prefs.getInteger("highScore")) {
+
+				prefs.getInteger("highScore");
+
+			} else {
+
+				//do ntohing
+
+			}
+
+
+		}
+
+		Gdx.app.log("HighScore", String.valueOf(prefs.getInteger("highScore")));
+
+
 
 		startGame();
 
@@ -108,15 +138,23 @@ public class FlappyBird extends ApplicationAdapter{
 	public void render () {
 
 		batch.begin();
+
 		batch.draw(background, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
 		if(gameState == 1) {
 
 			if(tubeX[scoringTube] < Gdx.graphics.getWidth() / 2) {
 
-				Gdx.app.log("width", String.valueOf(Gdx.graphics.getWidth() / 2));
+				//Gdx.app.log("width", String.valueOf(Gdx.graphics.getWidth() / 2));
 
 				score++;
+
+				if(score >= prefs.getInteger("highScore")) {
+
+					prefs.putInteger("highScore", score);
+					prefs.flush();
+
+				}
 
 				Gdx.app.log("Score", String.valueOf(score));
 
@@ -130,20 +168,18 @@ public class FlappyBird extends ApplicationAdapter{
 
 				}
 
-
-
 			}
 
 
 			if(Gdx.input.justTouched()) {
 
-                velocity = -30;
+                velocity = -20;
 
 			}
 
 			for(int i = 0; i < numberOfTubes; i++) {
 
-				Gdx.app.log("tubeXVal", String.valueOf(tubeX[i]));
+				//Gdx.app.log("tubeXVal", String.valueOf(tubeX[i]));
 
 				if(tubeX[i] < -topTube.getWidth()) {
 
@@ -182,6 +218,9 @@ public class FlappyBird extends ApplicationAdapter{
 
 		} else if (gameState == 0){
 
+			fontHighestScore.draw(batch, String.valueOf(prefs.getInteger("highScore")), (Gdx.graphics.getWidth() / 2) - fontHighestScore.getXHeight() / 2  ,  (Gdx.graphics.getHeight() / 2) + (Gdx.graphics.getHeight() / 2) / 2 );
+
+
 			if(Gdx.input.justTouched()) {
 
 				gameState = 1;
@@ -191,6 +230,11 @@ public class FlappyBird extends ApplicationAdapter{
 		} else if(gameState == 2) {
 
 			batch.draw(gameOver, Gdx.graphics.getWidth() / 2 - gameOver.getWidth() / 2, Gdx.graphics.getHeight() / 2 - gameOver.getHeight() / 2);
+
+			fontHighestScore.draw(batch, String.valueOf(prefs.getInteger("highScore")), (Gdx.graphics.getWidth() / 2) - fontHighestScore.getXHeight() / 2  ,  (Gdx.graphics.getHeight() / 2) + (Gdx.graphics.getHeight() / 2) / 2 );
+
+
+			Gdx.app.log("HighScore", String.valueOf(prefs.getInteger("highScore")));
 
 			if(Gdx.input.justTouched()) {
 
@@ -216,10 +260,9 @@ public class FlappyBird extends ApplicationAdapter{
         }
 
 
-
         batch.draw(birds[flapState], Gdx.graphics.getWidth() / 2 - birds[flapState].getWidth() / 2, birdY);
 
-		font.draw(batch, String.valueOf(score), 100, 200);
+		fontCurrentScore.draw(batch, String.valueOf(score), 100, 200);
 
 		birdCircle.set(Gdx.graphics.getWidth() / 2, birdY + birds[flapState].getHeight() / 2 , birds[flapState].getWidth() /2 );
 
