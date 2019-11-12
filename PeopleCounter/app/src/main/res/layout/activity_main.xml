@@ -9,7 +9,6 @@
     tools:context=".MainActivity"
     tools:deviceIds="wear"
     android:id="@+id/frame"
-    android:layout_centerInParent="true"
     >
 
     <FrameLayout
@@ -20,28 +19,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
-
-                android:id="@+id/text"
+            <Button
+                android:id="@+id/resetButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
-                android:gravity="center_horizontal"
-                android:text="@string/hello_world" />
+                android:onClick="reset"
+                android:text="@string/reset" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textSize="40sp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/incrementButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:onClick="showWatchShape"
-                android:text="@string/show_watch_shape"
-                android:textSize="8sp" />
-
+                android:onClick="plusOne"
+                android:text="@string/_1" />
         </LinearLayout>
 
     </FrameLayout>
