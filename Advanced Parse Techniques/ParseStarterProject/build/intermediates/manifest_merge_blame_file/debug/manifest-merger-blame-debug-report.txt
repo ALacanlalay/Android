@@ -14,60 +14,60 @@
 14
 15    <uses-sdk
 16        android:minSdkVersion="27"
-16-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml
+16-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml
 17        android:targetSdkVersion="29" />
-17-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml
+17-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml
 18
 19    <uses-permission android:name="android.permission.INTERNET" />
-19-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:13:5-67
-19-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:13:22-64
+19-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:13:5-67
+19-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:13:22-64
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:14:5-79
-20-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:14:22-76
+20-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:14:5-79
+20-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:14:22-76
 21
 22    <application
-22-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:16:5-38:19
+22-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:16:5-38:19
 23        android:name="com.parse.starter.StarterApplication"
-23-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:17:9-43
+23-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:17:9-43
 24        android:allowBackup="true"
-24-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
+24-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.1.0] /home/monde/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
 26        android:debuggable="true"
 27        android:icon="@mipmap/ic_launcher"
-27-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
+27-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
 28        android:label="@string/app_name"
-28-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:20:9-41
+28-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:20:9-41
 29        android:theme="@style/AppTheme" >
-29-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:21:9-40
+29-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:21:9-40
 30        <meta-data
-30-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:22:9-24:52
+30-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:22:9-24:52
 31            android:name="com.parse.APPLICATION_ID"
-31-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:23:13-52
+31-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:23:13-52
 32            android:value="@string/parse_app_id" />
-32-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:24:13-49
+32-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:24:13-49
 33        <meta-data
-33-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:25:9-27:56
+33-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:25:9-27:56
 34            android:name="com.parse.CLIENT_KEY"
-34-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:26:13-48
+34-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:26:13-48
 35            android:value="@string/parse_client_key" />
-35-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:27:13-53
+35-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:27:13-53
 36
 37        <activity
-37-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:29:9-37:20
+37-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:29:9-37:20
 38            android:name="com.parse.starter.MainActivity"
-38-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:30:13-41
+38-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:30:13-41
 39            android:label="@string/app_name" >
-39-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:31:13-45
+39-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:31:13-45
 40            <intent-filter>
-40-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:32:13-36:29
+40-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:32:13-36:29
 41                <action android:name="android.intent.action.MAIN" />
-41-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:33:17-69
-41-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:33:25-66
+41-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:33:17-69
+41-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:33:25-66
 42
 43                <category android:name="android.intent.category.LAUNCHER" />
-43-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:35:17-77
-43-->/home/monde/AndroidStudioProjects/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:35:27-74
+43-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:35:17-77
+43-->/home/monde/AndroidStudioProjects/Android/Advanced Parse Techniques/ParseStarterProject/src/main/AndroidManifest.xml:35:27-74
 44            </intent-filter>
 45        </activity>
 46    </application>
