@@ -1,0 +1,7 @@
+#Fri Nov 15 14:33:30 PHT 2019
+base.0=/home/monde/Downloads/WhatsApp/ParseStarterProject/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/monde/Downloads/WhatsApp/ParseStarterProject/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
