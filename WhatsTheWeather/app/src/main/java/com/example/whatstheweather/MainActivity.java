@@ -1,9 +1,11 @@
 package com.example.whatstheweather;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.JsonReader;
 import android.util.Log;
@@ -25,7 +27,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutionException;import java.math.BigDecimal;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         @Override
         protected void onPostExecute(String result) {
 
@@ -88,9 +93,11 @@ public class MainActivity extends AppCompatActivity {
 
                 JSONArray arrWeatherInfo = new JSONArray(weatherInfo);
 
-                for(int i = 0; i < arrWeatherInfo.length(); i++) {
+                    for(int i = 0; i < arrWeatherInfo.length(); i++) {
 
                     JSONObject jsonPartWeatherInfo = arrWeatherInfo.getJSONObject(i);
+
+                    Log.i("Id", String.valueOf(jsonPartWeatherInfo.getInt("id")));
 
 
                     if(jsonPartWeatherInfo.getString("main").equals("") && jsonPartWeatherInfo.getString("description").equals(""))
@@ -107,10 +114,40 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
+
+                JSONObject obj = new JSONObject(result);
+                String temperatureInfo = obj.getString("main");
+
+                String tempInKelvin = null;
+
+                Log.i("Info", temperatureInfo);
+
+                String [] splitResult = temperatureInfo.split("humidity");
+
+                Pattern p = Pattern.compile("\"temp\":(.*?),");
+                Matcher m = p.matcher(splitResult[0]);
+
+                while(m.find()){
+
+                Log.i("Info", m.group(1));
+
+                tempInKelvin = String.valueOf(m.group(1));
+
+                }
+
+                Log.i("TempInKelvin", tempInKelvin);
+
+                double tempInCelsius = Double.parseDouble(tempInKelvin) - 273.15;
+
+                textView2.setText("Temperature in Celsius: " + tempInCelsius);
+
+
             } catch (Exception e) {
 
                     Toast.makeText(getApplicationContext(), "Can't find weather!", Toast.LENGTH_LONG).show();
                     Log.i("Error onPostExecute", "Failed!");
+
+                    e.printStackTrace();
 
                     textView1.setText("");
                     textView2.setText("");
