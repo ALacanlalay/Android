@@ -29,7 +29,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.concurrent.ExecutionException;import java.math.BigDecimal;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.regex.Pattern;import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -91,7 +91,33 @@ public class MainActivity extends AppCompatActivity {
 
                 String weatherInfo = jsonObject.getString("weather");
 
-                JSONArray arrWeatherInfo = new JSONArray(weatherInfo);
+                    JSONObject obj = new JSONObject(result);
+                    String temperatureInfo = obj.getString("main");
+
+                    String tempInKelvin = null;
+
+                    Log.i("Info", temperatureInfo);
+
+                    String [] splitResult = temperatureInfo.split("humidity");
+
+                    Pattern p = Pattern.compile("\"temp\":(.*?),");
+                    Matcher m = p.matcher(splitResult[0]);
+
+                    while(m.find()){
+
+                        Log.i("Info", m.group(1));
+
+                        tempInKelvin = String.valueOf(m.group(1));
+
+                    }
+
+                    Log.i("TempInKelvin", tempInKelvin);
+
+                    double tempInCelsius = Double.parseDouble(tempInKelvin) - 273.15;
+
+                    DecimalFormat df = new DecimalFormat("#.00");
+
+                    JSONArray arrWeatherInfo = new JSONArray(weatherInfo);
 
                     for(int i = 0; i < arrWeatherInfo.length(); i++) {
 
@@ -106,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
                     } else {
 
-                        textView1.setText("Weather Condition: " + jsonPartWeatherInfo.getString("main") + "\n" + "Description: " + jsonPartWeatherInfo.getString("description"));
+                        textView1.setText("Weather Condition: " + jsonPartWeatherInfo.getString("main") + "\n" + "Description: " + jsonPartWeatherInfo.getString("description") + "\n" + "Temperature: " + df.format(tempInCelsius) + " °C");
                         //textView2.setText("Description: " + jsonPartWeatherInfo.getString("description"));
 
                     }
@@ -115,31 +141,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                JSONObject obj = new JSONObject(result);
-                String temperatureInfo = obj.getString("main");
-
-                String tempInKelvin = null;
-
-                Log.i("Info", temperatureInfo);
-
-                String [] splitResult = temperatureInfo.split("humidity");
-
-                Pattern p = Pattern.compile("\"temp\":(.*?),");
-                Matcher m = p.matcher(splitResult[0]);
-
-                while(m.find()){
-
-                Log.i("Info", m.group(1));
-
-                tempInKelvin = String.valueOf(m.group(1));
-
-                }
-
-                Log.i("TempInKelvin", tempInKelvin);
-
-                double tempInCelsius = Double.parseDouble(tempInKelvin) - 273.15;
-
-                textView2.setText("Temperature in Celsius: " + tempInCelsius);
 
 
             } catch (Exception e) {
